@@ -1,8 +1,8 @@
 {
-  "name": "assassins-creed-checkers-solver",
+  "name": "assassins-creed-black-flag-checkers-solver",
   "version": "1.0.0",
   "private": false,
-  "description": "Unofficial browser-based checkers solver for the Assassin's Creed board mini-game.",
+  "description": "Unofficial browser-based checkers solver, solution, and walkthrough helper for the Assassin's Creed IV: Black Flag tavern mini-game.",
   "scripts": {
     "test": "node tests/rules-smoke-test.js"
   },
@@ -10,7 +10,13 @@
     "checkers",
     "draughts",
     "solver",
+    "solution",
+    "walkthrough",
+    "soluce",
+    "solucionador",
     "assassins-creed",
+    "black-flag",
+    "ac4",
     "board-game"
   ],
   "license": "MIT"

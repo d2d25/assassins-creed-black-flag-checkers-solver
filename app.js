@@ -13,7 +13,7 @@ const DIAGONALS = [
 ];
 const TRANSLATIONS = {
   fr: {
-    appTitle: "Assassin's Creed Checkers Solver",
+    appTitle: "Assassin's Creed Black Flag Checkers Solver",
     gameSection: "Partie",
     language: "Langue",
     yourSide: "Ton camp",
@@ -57,7 +57,7 @@ const TRANSLATIONS = {
     undoneBest: "Coup annulé.",
   },
   en: {
-    appTitle: "Assassin's Creed Checkers Solver",
+    appTitle: "Assassin's Creed Black Flag Checkers Solver",
     gameSection: "Game",
     language: "Language",
     yourSide: "Your side",
@@ -101,7 +101,7 @@ const TRANSLATIONS = {
     undoneBest: "Move undone.",
   },
   es: {
-    appTitle: "Assassin's Creed Checkers Solver",
+    appTitle: "Assassin's Creed Black Flag Checkers Solver",
     gameSection: "Partida",
     language: "Idioma",
     yourSide: "Tu bando",

@@ -1,8 +1,14 @@
-# Assassin's Creed Checkers Solver
+# Assassin's Creed Black Flag Checkers Solver
 
-Unofficial browser-based helper for the Assassin's Creed checkers-style board mini-game.
+Unofficial browser-based solver for the **Checkers** tavern mini-game in **Assassin's Creed IV: Black Flag**.
 
-Set up the board, choose your side, click the opponent's move, and the solver suggests a reply. The app runs locally in the browser and does not require a server.
+Set up the board, choose your side, click the opponent's move, and the solver suggests a reply. The app runs in the browser and does not require a server.
+
+Keywords people may search for:
+
+- English: Assassin's Creed Black Flag Checkers Solver, AC4 Checkers solution, Black Flag Checkers walkthrough, best move helper.
+- Français : soluce dames Assassin's Creed Black Flag, solution jeu de dames AC4, aide meilleur coup.
+- Español: solucionador damas Assassin's Creed Black Flag, solucion juego de damas AC4, ayuda mejor movimiento.
 
 ## Features
 
@@ -31,7 +37,7 @@ This is **not Russian draughts**. It follows the custom rules observed in the mi
 
 ## Use It
 
-Open `index.html` in a browser.
+Open the published page or `index.html` in a browser.
 
 1. Choose your language and side.
 2. Recreate the current board position.
