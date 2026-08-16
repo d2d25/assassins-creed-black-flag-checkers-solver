@@ -1,0 +1,98 @@
+<!doctype html>
+<html id="htmlRoot" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Assassin's Creed Checkers Solver</title>
+    <meta
+      name="description"
+      content="Unofficial checkers solver for the Assassin's Creed board mini-game. Set up a position, enter moves by clicking, and get a suggested move."
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="board-zone" aria-label="Plateau de dames 8 par 8">
+        <div class="top-bar">
+          <div>
+            <h1 data-i18n="appTitle">Assassin's Creed Checkers Solver</h1>
+            <p id="statusText">Set up a position, then start the assistant.</p>
+          </div>
+          <div class="turn-badge" id="turnBadge">To move: White</div>
+        </div>
+
+        <div class="board-wrap">
+          <div id="rankLabels" class="rank-labels" aria-hidden="true"></div>
+          <div id="board" class="board" aria-label="Plateau 8 par 8"></div>
+        </div>
+        <div id="fileLabels" class="file-labels" aria-hidden="true"></div>
+      </section>
+
+      <aside class="panel">
+        <section class="tool-section">
+          <h2 data-i18n="gameSection">Partie</h2>
+          <label>
+            <span data-i18n="language">Langue</span>
+            <select id="language">
+              <option value="fr">Français</option>
+              <option value="en">English</option>
+              <option value="es">Español</option>
+            </select>
+          </label>
+          <label>
+            <span data-i18n="yourSide">Ton camp</span>
+            <select id="userSide">
+              <option value="b" data-i18n="black">Noirs</option>
+              <option value="w" data-i18n="white">Blancs</option>
+            </select>
+          </label>
+          <label>
+            <span data-i18n="whoPlaysNow">Qui joue maintenant</span>
+            <select id="sideToMove">
+              <option value="w" data-i18n="white">Blancs</option>
+              <option value="b" data-i18n="black">Noirs</option>
+            </select>
+          </label>
+          <label class="check-row">
+            <input id="invertSquares" type="checkbox" />
+            <span data-i18n="invertSquares">Inverser les couleurs des cases</span>
+          </label>
+          <div class="button-row">
+            <button id="standardBtn" type="button" data-i18n="initialPosition">Position initiale</button>
+            <button id="clearBtn" type="button" data-i18n="clearBoard">Vider</button>
+          </div>
+          <button id="startBtn" class="primary" type="button" data-i18n="startAssistant">Lancer l'assistance</button>
+          <button id="undoBtn" type="button" data-i18n="undo">Annuler le dernier coup</button>
+        </section>
+
+        <section class="tool-section">
+          <h2 data-i18n="boardEdit">Édition du plateau</h2>
+          <p class="hint" data-i18n="editHint">Clique sur une case sombre pour faire défiler : vide, pion blanc, dame blanche, pion noir, dame noire.</p>
+          <div class="legend">
+            <span><b class="piece-sample white"></b> <span data-i18n="whiteMan">Pion blanc</span></span>
+            <span><b class="piece-sample white king"></b> <span data-i18n="whiteKing">Dame blanche</span></span>
+            <span><b class="piece-sample black"></b> <span data-i18n="blackMan">Pion noir</span></span>
+            <span><b class="piece-sample black king"></b> <span data-i18n="blackKing">Dame noire</span></span>
+          </div>
+        </section>
+
+        <section class="tool-section">
+          <h2 data-i18n="moveInput">Coup à entrer</h2>
+          <p class="hint" data-i18n="moveHint">Clique le pion qui vient de jouer, puis sa case d'arrivée. Pour une rafle, clique chaque case d'atterrissage.</p>
+        </section>
+
+        <section class="tool-section">
+          <h2 data-i18n="suggestedMove">Coup proposé</h2>
+          <div id="bestMove" class="best-move">Start the assistant.</div>
+        </section>
+
+        <section class="tool-section history-section">
+          <h2 data-i18n="history">Historique</h2>
+          <ol id="history"></ol>
+        </section>
+      </aside>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

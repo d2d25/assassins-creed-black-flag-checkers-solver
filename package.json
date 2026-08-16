@@ -1,0 +1,17 @@
+{
+  "name": "assassins-creed-checkers-solver",
+  "version": "1.0.0",
+  "private": false,
+  "description": "Unofficial browser-based checkers solver for the Assassin's Creed board mini-game.",
+  "scripts": {
+    "test": "node tests/rules-smoke-test.js"
+  },
+  "keywords": [
+    "checkers",
+    "draughts",
+    "solver",
+    "assassins-creed",
+    "board-game"
+  ],
+  "license": "MIT"
+}
